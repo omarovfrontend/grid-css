@@ -71,14 +71,22 @@ a {
     color: #fff;
 }
 
-button {
-    display: block;
-    background-image: url(../img/menu.png);
-    height: 33px;
+.burger {
     width: 33px;
-    background-color: transparent;
-    border: none;
+    height: 30px;
+    cursor: pointer;
+    background: linear-gradient(to bottom, #000 10%, 
+                                transparent 11%, transparent 30%, 
+                                #000 31%, #000 40%, transparent 41%, 
+                                transparent 60%, #000 61%, #000 70%,
+                                transparent 71%);
+
     margin-bottom: 60px;
+}
+
+.burger__active {
+    background: linear-gradient(45deg, transparent 45%, #000 46%, #000 55%, transparent 56%),
+                linear-gradient(-45deg, transparent 45%, #000 46%, #000 55%, transparent 56%);
 }
 
 .form input::-webkit-input-placeholder, .form textarea::-webkit-input-placeholder {color: #fff;} 
